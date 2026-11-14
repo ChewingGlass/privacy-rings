@@ -129,7 +129,7 @@ solana-account-info = "3.1"
 solana-account-view = "2.0"
 solana-account-decoder = "4.1"
 solana-account-decoder-client-types = "4.1"
-solana-address = { version = "=2.6.1", features = ["atomic", "borsh", "bytemuck", "copy", "decode", "wincode"] }
+solana-address = { version = "=2.7.0", features = ["atomic", "borsh", "bytemuck", "copy", "decode", "wincode"] }
 solana-banks-client = { version = "4.1", features = ["agave-unstable-api"] }
 solana-bn254 = "3.2.1"
 solana-clock = "3.0"
@@ -139,10 +139,10 @@ solana-compute-budget-interface = "3.0"
 solana-cpi = "3.1"
 solana-curve25519 = "4.0"
 solana-epoch-info = "3.1"
-# Pin solana-hash to 4.5.0: the agave 4.2 graph (agave-feature-set,
-# solana-message, solana-transaction) is built against 4.5.x; letting it float
+# Pin solana-hash to 4.6.0: the agave 4.3 graph (agave-feature-set,
+# solana-message, solana-transaction) is built against 4.6.x; letting it float
 # duplicates the crate with types the rest of the graph does not share.
-solana-hash = "=4.5.0"
+solana-hash = "=4.6.0"
 solana-instruction = "3.4"
 solana-instruction-error = "2.4"
 solana-keypair = "3.1.2"
@@ -300,7 +300,7 @@ aws-sdk-kms = "1"
 aws-smithy-mocks = "0.3"
 criterion = "0.5"
 proptest = "1"
-wincode = { version = "0.5", default-features = false, features = ["derive", "alloc"] }
+wincode = { version = "0.6", default-features = false, features = ["derive", "alloc"] }
 x509-cert = { version = "0.3", default-features = false }
 
 [profile.dev]
